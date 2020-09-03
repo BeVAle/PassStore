@@ -38,8 +38,7 @@ func (arg *ArgsHandler) showKeys() {
 	}
 }
 
-
-func (arg *ArgsHandler) SetValueFromCli()  {
+func (arg *ArgsHandler) SetValueFromCli() {
 	for i := 1; i < len(arg.arguments); i++ {
 		arg.values = append(arg.values, arg.arguments[i])
 	}

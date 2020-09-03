@@ -1,12 +1,22 @@
 package main
 
 import (
-	"github.com/bevale/passStore/src/cli"
+	"github.com/bevale/passStore/src/controller"
+	"github.com/bevale/passStore/src/file"
 	"os"
 )
 
 func main()  {
 	arguments := os.Args
-	argsHandler :=  cli.NewArgsHandler(arguments)
-	argsHandler.DoHandler()
+	cliController := controller.NewCliController(arguments)
+	cliController.Run()
+
+	file1 := file.NewFile()
+	file1.Read()
+
+
+
+
+
+
 }
