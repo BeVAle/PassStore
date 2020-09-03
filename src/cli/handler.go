@@ -41,19 +41,13 @@ func (arg *ArgsHandler) showKeys() {
 
 func (arg *ArgsHandler) SetValueFromCli()  {
 	for i := 1; i < len(arg.arguments); i++ {
-		if i == 1 {
-			continue
-		}
 		arg.values = append(arg.values, arg.arguments[i])
 	}
 	arg.showValues()
 }
 
-func (arg *ArgsHandler) showValues(){
+func (arg *ArgsHandler) showValues() {
 	for _, v := range arg.values {
 		fmt.Println(v)
 	}
 }
-
-
-
