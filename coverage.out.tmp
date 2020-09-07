@@ -1,0 +1,17 @@
+mode: set
+github.com/bevale/passStore/src/cli/handler.go:11.54,13.2 1 1
+github.com/bevale/passStore/src/cli/handler.go:15.37,16.29 1 0
+github.com/bevale/passStore/src/cli/handler.go:20.2,21.23 2 0
+github.com/bevale/passStore/src/cli/handler.go:16.29,19.3 2 0
+github.com/bevale/passStore/src/cli/handler.go:24.41,25.38 1 1
+github.com/bevale/passStore/src/cli/handler.go:32.2,32.16 1 1
+github.com/bevale/passStore/src/cli/handler.go:25.38,26.22 1 1
+github.com/bevale/passStore/src/cli/handler.go:26.22,27.36 1 0
+github.com/bevale/passStore/src/cli/handler.go:27.36,29.5 1 0
+github.com/bevale/passStore/src/cli/handler.go:35.36,36.29 1 1
+github.com/bevale/passStore/src/cli/handler.go:36.29,38.3 1 0
+github.com/bevale/passStore/src/cli/handler.go:41.43,42.42 1 0
+github.com/bevale/passStore/src/cli/handler.go:45.2,45.18 1 0
+github.com/bevale/passStore/src/cli/handler.go:42.42,44.3 1 0
+github.com/bevale/passStore/src/cli/handler.go:48.38,49.31 1 0
+github.com/bevale/passStore/src/cli/handler.go:49.31,51.3 1 0

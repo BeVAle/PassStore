@@ -16,7 +16,7 @@ func NewFile() *File {
 
 func (f *File) Read() string {
 	file, err := os.Open("Test.txt")
-	if os.IsNotExist(err){
+	if os.IsNotExist(err) {
 		os.Create("Test.txt")
 	}
 	defer file.Close()
@@ -24,18 +24,6 @@ func (f *File) Read() string {
 	data := make([]byte, 64)
 	n, err := file.Read(data)
 	return string(data[:n])
-
-
-
-
-
-	//for  {
-	//	n, err := file.Read(data)
-	//	if err == io.EOF{
-	//		break
-	//	}
-	//	fmt.Print(string(data[:n]))
-	//}
 }
 
 func (f *File) Write(text string) {
@@ -49,4 +37,3 @@ func (f *File) Write(text string) {
 	fmt.Println(reflect.TypeOf(file).String())
 	file.WriteString(text)
 }
-
