@@ -21,7 +21,8 @@ func (f *File) Read() string {
 	}
 	defer file.Close()
 
-	data := make([]byte, 64)
+	//999 количество байт которое читаем из файла
+	data := make([]byte, 999)
 	n, err := file.Read(data)
 	return string(data[:n])
 }

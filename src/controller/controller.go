@@ -23,12 +23,18 @@ func (c *CliController) getCommand() {
 		return
 	}
 	switch c.arguments[1] {
-	case "search":
+	case "create":
+		command.Command = command.Create{}
+		break
+	case "view":
+		command.Command = command.View{}
+	case "remove":
+		command.Command = command.Remove{}
+	case "update":
+		command.Command = command.Update{}
+		break
+	default:
 		command.Command = command.Search{}
-		break
-	case "write":
-		command.Command = command.Write{}
-		break
 	}
 
 	args := make([]string, 2)
